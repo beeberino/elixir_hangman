@@ -12,7 +12,7 @@ config :socket_gallows, SocketGallowsWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "cLmuFwxK1npsgwf0Tx5KFJLPg4hFsyj7RCBtVtQEmW6NUDjPU/Cgvkm4cSSfa9o0",
   render_errors: [view: SocketGallowsWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: SocketGallows.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub_server: SocketGallows.PubSub
 
 # Configures Elixir's Logger
 config :logger, :console,
