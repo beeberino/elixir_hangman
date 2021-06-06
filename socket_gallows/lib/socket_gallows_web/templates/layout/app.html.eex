@@ -10,13 +10,14 @@
     <title>Only Your Intellect Can Save the Accused</title>
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
     <div class="container" >
       <main role="main">
-        <%= render @view_module, @view_template, assigns %>
+        <%= @inner_content %>
       </main>
     </div> <!-- /container -->
     <script src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
